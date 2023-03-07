@@ -2,8 +2,11 @@
 // Define the webhook URL
 $webhook_url = 'https://discord.com/api/webhooks/1082795870057152602/rxODNle0UhU31oGepMNCDW4CVeG-QtaTLDVu3u0M_aFGToF8jibgiWOiCaYvqhMecviP';
 
+// Set the correct password
+$correct_password = 'FalconTest123';
+
 // Check if the user has entered the correct password
-if ($_POST['password'] == 'your_password_here') {
+if ($_POST['password'] == $correct_password) {
   // Log the IP address of the user
   $ip = $_SERVER['REMOTE_ADDR'];
   $file = fopen('log.txt', 'a');
