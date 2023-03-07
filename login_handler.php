@@ -26,7 +26,7 @@ if ($_POST['password'] == 'your_password_here') {
   // Redirect the user to the private page
   header('Location: private_page.php');
 } else {
-  // Redirect the user to the login page with an error message
+  // Redirect the user back to the login page with an error message
   header('Location: login.php?error=1');
 }
 ?>
